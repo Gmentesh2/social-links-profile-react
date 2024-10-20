@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: inter-regular;
+}
+@font-face {
+  font-family: inter-regular;
+  src: url("./assets/fonts/static/Inter-Regular.ttf");
+}
+@font-face {
+  font-family: inter-bold;
+  src: url("./assets/fonts/static/Inter-Bold.ttf");
+}
+@font-face {
+  font-family: inter-semiBold;
+  src: url("./assets/fonts/static/Inter-SemiBold.ttf");
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(0, 0%, 8%);
+}
+.wrapper {
+  width: 384px;
+  height: 611px;
+  background-color: hsl(0, 0%, 12%);
+  border-radius: 11px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+}
+.avatar {
+  width: 88px;
+  height: 88px;
+  margin-top: 40px;
+  border-radius: 50%;
+}
+.fullName {
+  padding-top: 24px;
+  color: #ffffff;
+  font-size: 24px;
+  font-family: inter-semiBold;
+}
+.countryName {
+  font-family: inter-bold;
+  font-size: 14px;
+  color: hsl(75, 94%, 57%);
+  padding-top: 10px;
+}
+.title {
+  font-size: 14px;
+  padding-top: 24px;
+  padding-bottom: 8px;
+  font-family: inter-regular;
+  color: hsl(0, 0%, 100%);
+}
+.buttonSection {
+  display: flex;
+  flex-direction: column;
+}
+.btn {
+  width: 304px;
+  height: 45px;
+  border-radius: 8px;
+  background-color: hsl(0, 0%, 20%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  border: none;
+  font-family: inter-bold;
+  margin-top: 1.1rem;
+}
+.btn:hover {
+  background-color: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 12%);
+  transition: all 0.3s ease;
+}
+@media (max-width: 1024px) {
+  .wrapper {
+    width: 456px;
+    height: 611px;
+  }
+  .btn {
+    width: 376px;
+  }
+}
+
+@media (max-width: 500px) {
+  .wrapper {
+    width: 327px;
+    height: 579px;
+  }
+  .avatar {
+    margin-top: 24px;
+  }
+  .btn {
+    width: 279px;
+  }
+}
